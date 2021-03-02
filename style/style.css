@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 1. Navbar */
+
+h2{
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+.navbar{
+    top: -1px;
+    width: 100%;
+    position: sticky;
+    z-index: +1;
+}
+
+nav{
+    background-color: #271c3efc;
+    z-index: +1;
+}
+nav ul{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+nav li{
+    margin: 1em auto;
+}
+nav a{
+    color: white;
+    padding: 0.85em;
+}
+nav a:hover{
+    background-color: white;
+    color: rgba(48, 25, 25, 0.815);
+}
+
+
+
+/* 2. footer */
+footer{
+    background-color: #271c3efc;
+    color: white;
+    width: 100%;
+
+}
+.container-footer{
+    width: 90%;
+    padding: 1em;
+    max-width: 900px;
+    bottom: 0;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+.footer-left,
+.footer-right{
+    padding: 1em;
+}
+
+
+/* 3. Body */
+
+.main{    
+    width: 100%;
+    background-color: #000000;
+    color: white;
+}
+.container{
+    padding: 1em;
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* home */
+.home
+h1,
+p{
+    margin: auto;
+    width: 100%;
+    padding: 0.25em;
+}
+.home img{
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+}
+
+/* about */
+.about{
+    display: flex;
+    margin: 1em auto;
+    padding: 1em;
+}
+.about-left{
+    width: 40%;
+    margin: auto;
+}
+
+.about-right{
+    width: 40%;
+    margin: auto;
+}
+.about-left img{
+    border-radius: 6em;
+    width: 40%;
+}
+.about-right img{
+    border-radius: 6em;
+    width: 40%;
+}
+.container h1{
+    font-size: 2em;
+    border-bottom: solid #271c3efc 4px;
+    margin: 0.25em auto;
+    width: 40%;
+}
+
+/* team */
+
+.container-team{
+    text-align: center;
+    width: 100%;
+    background-color:#271c3efc;
+}
+
+.container-team h2{
+    background-color:#271c3efc;
+}
+.team{    
+    display: flex;
+    margin: 2em auto;
+    padding-bottom: 2em;
+}
+.team img{
+    width: 40%;
+    margin: auto;
+    border-radius: 8em;
+}
+.one,
+.two,
+.three
+{
+    width: 25%;
+    margin: auto;
+}
+.container h1{
+    font-size: 2em;
+    border-bottom: solid #271c3efc 4px;
+    margin: 0.25em auto;
+    width: 30%;
+    padding-top: 1em;
+}
+
+/* form */
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+form input,
+textarea{
+    width: 50%;
+    margin:0.5em auto;
+    padding: 0.5em;
+    border: solid #271c3efc 4px;
+}
+form button{
+    width: 30%;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    border: solid #271c3efc 4px;
+}
+
+
+/* burger */
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 0.60em;
+    top: 0.65em;
+
+}
+.line{
+    width: 1.5em;
+    background-color: white;
+    height: 0.25em;
+    margin: 0.20em 0.20em;
+}
+
+/* Responsive and Media Queries */
+
+
+@media (max-width:700px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    footer{
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-left,
+    .footer-right{
+        padding: 0;
+        margin: 0 auto;
+    }
+    /* media navbar */
+    .navbar{
+
+    }
+    .nav-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        height: 12em;
+        transform: all 10s ease-out;
+    }
+    
+    /* media team */
+    .team{
+        display: flex;
+        flex-direction: column;
+        margin: 2em auto;
+        padding: 0.2em;
+    }
+    .one{
+        width: 90%;
+        margin:0.25em auto;
+    }
+    .two{
+        width: 90%;
+        margin:0.25em auto;
+    }
+    .three{
+        width: 90%;
+        margin:0.25em auto;
+    }
+
+    .one,
+    .two,
+    .three h2{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .container h1{
+        width: 50%;
+        margin:0 auto;
+    }
+
+    /* media-query about */
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin:2em auto;
+    }
+    .about h1{
+        margin-top:2em;
+    }
+    .about-left,
+    .about-right{
+        width: 90%;
+        margin:0 auto;
+        padding: 0;
+    }
+    .container h1{
+        margin: 0 auto;
+        width: 80%;
+        padding: 0;
+    }
+    .container-team h1{
+        margin: 0 auto;
+        width: 80%;
+        padding: 0;
+    }
+
+    /* media-query form */
+    .form{
+        margin-top: 2em auto;
+        padding-bottom:0;
+    }
+    .form input,
+    textarea{
+        width: 70%;
+        margin: 0.5em auto;
+    }
+    .form button{
+        width: 40%;
+        margin-top: 0.5em auto;
+    }
+    /* home */
+    .home
+    h1,
+    p{
+    margin: auto;
+    width: 70%;
+    padding: 0.25em;
+    }
+    .home img{
+        width: 90%;
+        margin: auto;
+    }
+    .main{    
+        width: 100%;
+        margin: 0 auto;
+    }
+/* burger */
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 3em;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
